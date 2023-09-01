@@ -6,5 +6,12 @@ pipeline {
         git branch: 'main', url: 'https://github.com/Honeyoceanmtech/simple_project.git'
       }
     }
+    stage('Deploy')
+    {
+      steps {
+        echo "deploying the application"
+        sh "sudo nohup python3 main.py"
+      }
+    }
   }
 }
