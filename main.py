@@ -7,7 +7,7 @@ CORS(app)
 
 @app.route('/hello', methods=['GET'])
 def hello():
-    values = "Hello"
+    values = "Hello world"
     return jsonify(values)
 
 
