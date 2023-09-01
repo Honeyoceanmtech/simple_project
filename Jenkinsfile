@@ -10,7 +10,7 @@ pipeline {
     {
       steps {
         echo "deploying the application"
-        sh "sudo nohup python3 main.py"
+        sh "python3 main.py"
       }
     }
   }
