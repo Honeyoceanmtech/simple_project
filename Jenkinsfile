@@ -10,7 +10,7 @@ pipeline {
     {
       steps {
         echo "deploying the application"
-        sh "pwd"
+        sh "python"
       }
     }
   }
