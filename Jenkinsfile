@@ -10,7 +10,7 @@ pipeline {
     {
       steps {
         echo "deploying the application"
-        sh "ls"
+        sh "docker ps"
       }
     }
   }
